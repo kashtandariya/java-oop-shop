@@ -16,6 +16,8 @@ di 0 per arrivare a 8 caratteri
  */
 package org.lessons.java.shop;
 
+import java.util.Random;
+
 public class Prodotto {
 	private final int codice;
 	private String nome;
@@ -24,11 +26,16 @@ public class Prodotto {
 	private double iva;
 	
 	public Prodotto(int codice, String nome, String descrizione, double prezzo, double iva) {
-		this.codice = codice;
+		this.codice = generaCodice();
 		this.nome = nome;
 		this.descrizione = descrizione;
 		this.prezzo = prezzo;
 		this.iva = iva;
 	}
+	//metodo per generare codice random
+	private int generaCodice() {
+		Random random = new Random();
+		return random.nextInt(10000000);
+		}
 	
 }
