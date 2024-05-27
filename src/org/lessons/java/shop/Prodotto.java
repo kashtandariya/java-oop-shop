@@ -25,7 +25,7 @@ public class Prodotto {
 	private double prezzo;
 	private double iva;
 	
-	public Prodotto(int codice, String nome, String descrizione, double prezzo, double iva) {
+	public Prodotto(String nome, String descrizione, double prezzo, double iva) {
 		this.codice = generaCodice();
 		this.nome = nome;
 		this.descrizione = descrizione;
