@@ -11,5 +11,6 @@ public class Main {
         System.out.println("Prezzo Base: " + prodotto.getPrezzoBase());
         System.out.println("Prezzo con IVA: " + prodotto.getPrezzoIva());
         System.out.println("Nome Esteso: " + prodotto.getNomeEsteso());
+        System.out.println("Codice Prodotto: " + Prodotto.padLeftCodice(prodotto.getCodice()));
     }
 }
