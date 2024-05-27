@@ -35,7 +35,9 @@ public class Prodotto {
 	//metodo per generare codice random
 	private int generaCodice() {
 		Random random = new Random();
-		return random.nextInt(10000000);
+		int codiceGenerato = random.nextInt(100000000);
+		System.out.println("Codice generato: " + codiceGenerato);
+	    return codiceGenerato;
 		}
 	
 }
