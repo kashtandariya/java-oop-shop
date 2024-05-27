@@ -8,8 +8,8 @@
 *V- il prodotto esponga un metodo per avere il prezzo base
 *V- il prodotto esponga un metodo per avere il prezzo comprensivo di iva
 *- il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice-nome
-*Nello stesso package aggiungete una classe Main con metodo main nella quale testate tutte
-*le funzionalità della classe Prodotto.
+*VNello stesso package aggiungete una classe Main con metodo main nella quale testate tutte
+*Vle funzionalità della classe Prodotto.
 *BONUS: create un metodo (statico) che restituisca il codice con un pad left
 *di 0 per arrivare a 8 caratteri
 *(ad esempio codice 91 diventa 00000091, mentre codice 123445567 resta come è)
@@ -85,5 +85,10 @@ public class Prodotto {
         return prezzo + (prezzo * iva / 100);
     }
 	
-	
+	 // Metodo per ottenere il nome esteso
+    public String getNomeEsteso() {
+        return String.format("%08d-%s", codice, nome);
+    }
+    //sono due parametri divisi dal trattino. Il primo è un intero di 8 cifre, il secondo una stringa.
+
 }

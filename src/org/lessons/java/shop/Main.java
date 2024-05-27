@@ -10,5 +10,6 @@ public class Main {
         System.out.println("Descrizione Prodotto: " + prodotto.getDescrizione());
         System.out.println("Prezzo Base: " + prodotto.getPrezzoBase());
         System.out.println("Prezzo con IVA: " + prodotto.getPrezzoIva());
+        System.out.println("Nome Esteso: " + prodotto.getNomeEsteso());
     }
 }
